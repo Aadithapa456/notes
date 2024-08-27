@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --nav-color: #70ba43;
+    --text-color: #ffffff;
+    --main-bg-color: #1e2124; /*AKA Theme*/
+    --span-color: #16b11b;
+    --button-color: #67a850;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6;
+    font-family: poppins;
+}
+header{
+    background-color: var(--nav-color);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+}
+.main-logo>img{
+    height: 30px;
+    margin: 1rem;
+}
+.nav-items>ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.4rem;
+}
+.nav-items>ul>li{
+    margin: 2rem;
+}
+.nav-items>ul>li>a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+main{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--main-bg-color) ;
+    color: var(--text-color);
+    background-image: url(assets\background.png);
+}
