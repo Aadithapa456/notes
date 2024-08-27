@@ -1,52 +1,83 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-:root{
-    --nav-color: #70ba43;
-    --text-color: #ffffff;
-    --main-bg-color: #1e2124; /*AKA Theme*/
-    --span-color: #16b11b;
-    --button-color: #67a850;
+:root {
+   --nav-color: #70ba43;
+   --text-color: #ffffff;
+   --main-bg-color: #1e2124; /*AKA Theme*/
+   --span-color: #16b11b;
+   --button-color: #67a850;
 }
-html{
-    font-size: 62.5%;
-    line-height: 1.6;
-    font-family: poppins;
+html {
+   font-size: 62.5%;
+   line-height: 1.6;
+   font-family: poppins;
 }
-header{
-    background-color: var(--nav-color);
+header {
+   background-color: var(--nav-color);
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 90%;
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 90%;
 }
-.main-logo>img{
-    height: 30px;
-    margin: 1rem;
+.main-logo > img {
+   height: 30px;
+   margin: 1rem;
 }
-.nav-items>ul{
-    display: flex;
-    list-style: none;
-    font-size: 1.4rem;
+.nav-items > ul {
+   display: flex;
+   list-style: none;
+   font-size: 1.4rem;
 }
-.nav-items>ul>li{
-    margin: 2rem;
+.nav-items > ul > li {
+   margin: 2rem;
 }
-.nav-items>ul>li>a{
-    text-decoration: none;
-    color: var(--text-color);
+.nav-items > ul > li > a {
+   text-decoration: none;
+   color: var(--text-color);
 }
-main{
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color:var(--main-bg-color) ;
-    color: var(--text-color);
-    background-image: url(assets\background.png);
+main {
+   padding: 0.9rem 0.6rem;
+   border: 2px solid black;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: var(--main-bg-color);
+   color: var(--text-color);
+   background-image: url(../assets/background.png);
+}
+.hero-text {
+   /* border: 2px solid red; */
+   padding: 1.2rem 0.8rem;
+   font-size: 4.5rem;
+   font-weight: 700;
+   font-family: "Ubuntu", sans-serif;
+}
+.txt-green {
+   display: block;
+   color: var(--span-color);
+   font-weight: 800;
+}
+.hero-btn {
+   display: flex;
+   padding: 0.5rem 0.2rem;
+}
+.btn {
+   padding: 1.8rem 2.9rem;
+   background-color: var(--button-color);
+   border: none;
+   color: var(--text-color);
+   border-radius: 1.2rem;
+}
+@media only screen and (max-width: 600px) {
+   html {
+      font-size: 42.5%;
+   }
+   main {
+      flex-direction: column;
+   }
 }
