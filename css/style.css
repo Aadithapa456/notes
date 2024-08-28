@@ -102,6 +102,7 @@ main {
 }
 .hero-btn {
    padding: 0.5rem 0.2rem;
+   margin-left: -0.5rem;
 }
 .btn {
    display: flex;
@@ -116,9 +117,15 @@ main {
    font-size: 1.5rem;
    font-weight: 700;
 }
+.separator{
+   height: 2px;
+   width: 80%;
+   margin: auto;
+   background: var(--text-gradient);
+}
 .joke-section {
-   padding: 9rem 0;
-   position: relative;
+   padding: 9rem;
+   /* position: relative; */
    /* border: 2px solid green; */
    /* margin-top: 10rem; */
 }
@@ -133,8 +140,8 @@ main {
 .quote-cite {
    font-size: 1.8rem;
    font-style: italic;
-   position: absolute;
-   right: 50rem;
+   /* position: absolute; */
+   /* right: 50rem; */
 }
 
 .card-container {
@@ -206,9 +213,10 @@ main {
    background-color: #654ea3; /* Hover effect to match the text gradient */
    color: #ffffff;
 }
-/* .cards {
-   border: 2px solid red;
-} */
+.cards {
+   /* border: 2px solid red; */
+   margin-top: 7rem;
+}
 .notes {
    text-align: center;
    background: var(--text-gradient);
@@ -219,8 +227,8 @@ main {
 }
 footer{
    /* border: 2px solid; */
-   /* border-top-left-radius: 7rem;
-   border-top-right-radius: 7rem; */
+   /* border-top-left-radius: 7rem; */
+   /* border-top-right-radius: 7rem; */
    background: var(--color_nav-foot);
    color: var(--text-color);
    font-size: 1.4rem;
