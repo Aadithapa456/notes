@@ -6,7 +6,7 @@
 }
 :root {
    --color_nav-foot: linear-gradient(90deg, #6C63FF, #3A0CA3);
-   --text-color: black;
+   --text-color: #000000;
    --hero-color: #1e2124;
    --span-color: #16b11b;
    --button-color: linear-gradient(
@@ -32,12 +32,6 @@ body {
 }
 .flex {
    display: flex;
-}
-header{
-   /* border-radius: 7rem; */
-   /* background-color: var(--span-color); */
-   max-width: 60%;
-   margin: auto;
 }
 nav {
    display: flex;
