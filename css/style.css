@@ -2,10 +2,9 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   transition: 0.9s;
 }
 :root {
-   --color_nav-foot: linear-gradient(90deg, #6C63FF, #3A0CA3);
+   --color_nav-foot: linear-gradient(90deg, #6c63ff, #3a0ca3);
    --text-color: black;
    --hero-color: #1e2124;
    --span-color: #16b11b;
@@ -15,7 +14,11 @@
       #348ac7 51%,
       #7474bf 100%
    );
-   --theme: radial-gradient(343px at 46.3% 47.5%, rgb(242, 242, 242) 0%, rgb(241, 241, 241) 72.9%);
+   --theme: radial-gradient(
+      343px at 46.3% 47.5%,
+      rgb(242, 242, 242) 0%,
+      rgb(241, 241, 241) 72.9%
+   );
    /* --theme:linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
    --text-gradient: -webkit-radial-gradient(circle, #654ea3, #eaafc8);
 }
@@ -26,14 +29,16 @@ html {
 }
 body {
    background: var(--theme);
+   transition: background-color 0.9s;
 }
 .hidden {
    display: none;
 }
 .flex {
    display: flex;
+   align-items: center;
 }
-header{
+header {
    /* border-radius: 7rem; */
    /* background-color: var(--span-color); */
    max-width: 60%;
@@ -46,8 +51,9 @@ nav {
    max-width: 80%;
    margin: auto;
    transition: 0.9s;
+   position: relative;
 }
-nav.dark{
+nav.dark {
    background-color: #333;
    color: white;
 }
@@ -68,6 +74,9 @@ nav.dark{
    text-decoration: none;
    color: var(--text-color);
 }
+.nav-items {
+   /* position: relative; */
+}
 .nav-items .btn-theme {
    padding: 1.4rem 1.5rem;
    border: none;
@@ -76,12 +85,19 @@ nav.dark{
    font-size: 1.2rem;
    color: var(--text-color);
 }
+.fa-bars {
+   font-size: 2.5rem;
+}
 main {
    padding: 6.2rem 0.2rem;
    /* border: 2px solid black; */
    display: flex;
    justify-content: space-around;
    align-items: center;
+   /* display: grid;
+   justify-content: space-around;
+   align-content: center; */
+   grid-template-columns: repeat(2,1fr);
    color: var(--text-color);
 }
 
@@ -217,7 +233,7 @@ main {
    background-clip: text;
    -webkit-text-fill-color: transparent;
 }
-footer{
+footer {
    /* border: 2px solid; */
    /* border-top-left-radius: 7rem;
    border-top-right-radius: 7rem; */
@@ -244,7 +260,28 @@ footer{
    .fa-bars {
       display: block;
    }
-   .nav-items>ul>*:not(.fa-bars,.btn){
+   /* .nav-items>ul>*:not(.fa-bars){
       display: none;
+   } */
+   header {
+      max-width: 100%;
+   }
+   .nav-items {
+      height: 35rem;
+      background-color: gray;
+      position: absolute;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      top: 7rem;
+      right: 0;
+      width: 100%;
+   }
+   ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
 }
