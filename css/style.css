@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   transition: 0.9s;
 }
 :root {
    --color_nav-foot: linear-gradient(90deg, #6c63ff, #3a0ca3);
@@ -30,6 +29,7 @@ html {
 }
 body {
    background: var(--theme);
+   transition: background-color 0.9s;
 }
 .hidden {
    display: none;
@@ -94,6 +94,10 @@ main {
    display: flex;
    justify-content: space-around;
    align-items: center;
+   /* display: grid;
+   justify-content: space-around;
+   align-content: center; */
+   grid-template-columns: repeat(2,1fr);
    color: var(--text-color);
 }
 
