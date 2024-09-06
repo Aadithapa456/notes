@@ -27,6 +27,6 @@ function navBar() {
    if (isVisible) {
       nav.classList.toggle("nav-visible");
    } else {
-      nav.classList.toggle("nav-visible");
+      nav.classList.toggle("nav-visible"); // Used toggle to make everything uniform
    }
 }
