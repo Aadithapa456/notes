@@ -2,6 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   /* overflow-x: hidden; */
 }
 :root {
    --color_nav-foot: linear-gradient(90deg, #6c63ff, #3a0ca3);
@@ -27,10 +28,12 @@ html {
    font-size: 62.5%;
    line-height: 1.6;
    font-family: poppins;
+   overflow-x: hidden;
 }
 body {
    background: var(--theme);
    transition: background-color 0.9s;
+   overflow-x: hidden;
 }
 .hidden {
    display: none;
@@ -154,7 +157,7 @@ main {
    font-weight: 650;
 }
 .joke-text{
-   max-width: 60%;
+   max-width: 80%;
    margin: auto;
 }
 .quote-cite {
