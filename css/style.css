@@ -96,6 +96,7 @@ main {
    /* display: grid;
    justify-content: space-around;
    align-content: center; */
+   grid-template-columns: repeat(2, 1fr);
    color: var(--text-color);
 }
 
