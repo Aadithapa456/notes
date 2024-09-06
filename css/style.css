@@ -27,27 +27,42 @@ html {
    font-size: 62.5%;
    line-height: 1.6;
    font-family: poppins;
-   overflow-x: hidden;
 }
 body {
    background: var(--theme);
    transition: background-color 0.9s;
-   overflow-x: hidden;
 }
+<<<<<<< HEAD
 /* reusable */
+=======
+.hidden {
+   display: none;
+}
+>>>>>>> parent of 4f24cfd (Added responsiveness, Functional NavBar added)
 .flex {
    display: flex;
    align-items: center;
 }
+<<<<<<< HEAD
 /* header {
    border-radius: 7rem;
    background: var(--color_nav-foot);
 } */
+=======
+header {
+   /* border-radius: 7rem; */
+   /* background-color: var(--span-color); */
+   max-width: 60%;
+   margin: auto;
+}
+>>>>>>> parent of 4f24cfd (Added responsiveness, Functional NavBar added)
 nav {
    /* border: 2px solid; */
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
+   max-width: 80%;
+   margin: auto;
    transition: 0.9s;
    /* position: relative; */
 }
@@ -71,7 +86,6 @@ nav.dark {
 .nav-items > ul > li > a {
    text-decoration: none;
    color: var(--text-color);
-   transition: 1s;
 }
 .nav-items {
    /* position: relative; */
@@ -96,11 +110,12 @@ main {
    /* display: grid;
    justify-content: space-around;
    align-content: center; */
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2,1fr);
    color: var(--text-color);
 }
 
 .hero-text {
+   /* border: 2px solid red; */
    background: var(--text-gradient);
    background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -139,8 +154,13 @@ main {
    background: var(--text-gradient);
 }
 .joke-section {
+<<<<<<< HEAD
    padding: 9rem;
    /* position: relative; */
+=======
+   padding: 9rem 0;
+   position: relative;
+>>>>>>> parent of 4f24cfd (Added responsiveness, Functional NavBar added)
    /* border: 2px solid green; */
    /* margin-top: 10rem; */
 }
@@ -257,14 +277,19 @@ footer {
    margin-top: 14rem;
    padding: 3rem 6rem;
 }
+<<<<<<< HEAD
 .contact>a{
    text-decoration: none;
    color: var(--footer-txt-color);
 }
 
 @media only screen and (max-width: 750px) {
+=======
+
+@media only screen and (max-width: 600px) {
+>>>>>>> parent of 4f24cfd (Added responsiveness, Functional NavBar added)
    html {
-      font-size: 38.5%;
+      font-size: 42.5%;
    }
    .o-1 {
       order: 1;
@@ -280,40 +305,30 @@ footer {
    }
    .fa-bars {
       display: block;
-      color: var(--text-color);
    }
+   /* .nav-items>ul>*:not(.fa-bars){
+      display: none;
+   } */
    header {
-      max-width: 100% !important;
-      transition: 0.9s;
-      background-color: #e3e3e3;
-      transition: 1s;
-   }
-   nav {
-      width: 100% !important;
-      justify-content: space-between;
-      transition: 1s;
+      max-width: 100%;
    }
    .nav-items {
+      height: 35rem;
+      background-color: gray;
       position: absolute;
       left: 0;
-      z-index: 1000;
-      display: none;
+      display: flex;
       flex-direction: column;
-      width: 100vw;
-      top: 9rem;
-      left: -20px;
+      width: 80%;
+      top: 7rem;
       right: 0;
-      height: 32vh;
-      /* width: 100%; */
-      background-color: #e3e3e3;
-      transition: 1s;
+      width: 100%;
    }
-   ul {
+   ul{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: 1s;
    }
    footer{
       display: grid;
