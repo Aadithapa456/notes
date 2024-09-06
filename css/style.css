@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   /* overflow-x: hidden; */
 }
 :root {
    --color_nav-foot: linear-gradient(90deg, #6c63ff, #3a0ca3);
@@ -42,14 +41,12 @@ body {
    display: flex;
    align-items: center;
 }
-header {
-   /* border-radius: 7rem; */
-   /* background-color: var(--span-color); */
-   /* max-width: 80%; */
-   /* margin: auto; */
-}
+/* header {
+   border-radius: 7rem;
+   background: var(--color_nav-foot);
+} */
 nav {
-   border: 2px solid;
+   /* border: 2px solid; */
    display: flex;
    justify-content: space-between;
    align-items: center;
