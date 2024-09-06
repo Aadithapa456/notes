@@ -76,6 +76,9 @@ nav.dark {
    text-decoration: none;
    color: var(--text-color);
 }
+.nav-items {
+   /* position: relative; */
+}
 .nav-items .btn-theme {
    padding: 1.4rem 1.5rem;
    border: none;
